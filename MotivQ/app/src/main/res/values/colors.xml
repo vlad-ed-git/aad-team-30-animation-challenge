@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DADADA</color>
+    <color name="colorPrimaryDark">#DADADA</color>
+    <color name="colorAccent">#050505</color>
+    <color name="colorErrors">#B00020</color>
+    <color name="colorGray">#5b5b5b</color>
+</resources>

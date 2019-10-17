@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/padding_md"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/pop_up_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_icons"
+        android:drawableTop="@drawable/ic_quotes_black"
+        android:drawablePadding="@dimen/padding_std"
+        android:fontFamily="@font/poiret_one"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/md_txt" />
+
+    <TextView
+        android:id="@+id/positive_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_md"
+        android:layout_marginBottom="@dimen/padding_md"
+        android:paddingStart="@dimen/padding_std"
+        android:paddingEnd="@dimen/padding_std"
+        android:textSize="@dimen/md_txt"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/poiret_one"
+        android:drawableTop="@drawable/ic_done_green"
+        android:drawablePadding="@dimen/padding_std"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/negative_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_md"
+        android:layout_marginBottom="@dimen/padding_md"
+        android:paddingStart="@dimen/padding_std"
+        android:paddingEnd="@dimen/padding_std"
+        android:textSize="@dimen/md_txt"
+        android:textColor="@color/colorErrors"
+        android:fontFamily="@font/poiret_one"
+        android:drawableTop="@drawable/ic_error_red"
+        android:drawablePadding="@dimen/padding_std"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/dismiss_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/clickable_std"
+        android:paddingStart="@dimen/padding_std"
+        android:paddingEnd="@dimen/padding_std"
+        android:text="@string/close_txt"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poiret_one"
+        android:background="@drawable/accent_round_btn"
+        android:textAllCaps="false"
+        android:elevation="@dimen/card_elevation"/>
+
+</LinearLayout>

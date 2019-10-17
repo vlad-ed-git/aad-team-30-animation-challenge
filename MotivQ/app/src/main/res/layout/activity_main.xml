@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/main_act_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_act_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppToolBar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/quote_iv"
+        android:layout_marginTop="@dimen/clickable_height_padded"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/thumbnail_size"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:src="@drawable/quotation_mark"
+        android:contentDescription="@string/app_icons"/>
+
+    <TextView
+        android:id="@+id/quote_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ubuntu_mono"
+        android:gravity="center"
+        android:padding="@dimen/padding_md"
+        android:text="@string/inspire_yourself_txt"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lg_txt" />
+
+    <TextView
+        android:id="@+id/the_quote_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_std"
+        android:fontFamily="@font/poiret_one"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_md"
+        android:paddingEnd="@dimen/padding_md"
+        android:text="@string/dummy_quote_txt"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lg_txt"
+        android:drawableTop="@drawable/ic_quotes_black"
+        android:drawablePadding="@dimen/padding_std"/>
+
+    <TextView
+        android:id="@+id/the_author_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_std"
+        android:fontFamily="@font/poiret_one"
+        android:gravity="center_vertical|end"
+        android:paddingStart="@dimen/padding_md"
+        android:paddingEnd="@dimen/padding_md"
+        android:text="@string/author_prefix_txt"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lg_txt"
+        android:visibility="invisible"/>
+
+
+    <Button
+        android:id="@+id/get_quote_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/clickable_height_padded"
+        android:background="@drawable/accent_round_btn"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="@dimen/padding_md"
+        android:paddingTop="@dimen/padding_std"
+        android:paddingBottom="@dimen/padding_std"
+        android:paddingStart="@dimen/padding_md"
+        android:paddingEnd="@dimen/padding_md"
+        android:text="@string/get_random_quote_txt"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poiret_one"
+        android:textSize="@dimen/lg_txt"
+        android:textAllCaps="false"
+        android:onClick="onGetRandomQuoteBtnClicked"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="@dimen/icon_md"
+        android:layout_height="@dimen/icon_md"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+</LinearLayout>

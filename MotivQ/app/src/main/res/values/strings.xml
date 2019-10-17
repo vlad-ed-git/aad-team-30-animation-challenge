@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MotivQ</string>
+    <string name="internet_connection_title">Internet Connection</string>
+    <string name="internet_connection_err">It appears you are not connected to the internet!</string>
+    <string name="app_icons">MotivQ app icons</string>
+    <string name="close_txt">Dismiss</string>
+    <string name="credits_txt">Credits</string>
+    <string name="app_credits">
+        Icons by : flaticon.com\n
+        Quotes from : theysaidso.com
+    </string>
+    <string name="inspire_yourself_txt">Inspire yourself …</string>
+    <string name="dummy_quote_txt">today\'s quote …</string>
+    <string name="author_prefix_txt">by</string>
+    <string name="get_quote_txt">GET QUOTE</string>
+    <string name="get_random_quote_txt">Get Random Quote</string>
+    <string name="random_quote_title">Random Quote Generator</string>
+    <string name="err_fetching_quote">Couldn\'t fetch the quote!</string>
+</resources>

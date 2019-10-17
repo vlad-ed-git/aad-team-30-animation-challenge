@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_std">8dp</dimen>
+    <dimen name="padding_md">16dp</dimen>
+
+    <dimen name="icon_std">24dp</dimen>
+    <dimen name="icon_md">32dp</dimen>
+
+    <dimen name="clickable_std">48dp</dimen>
+    <dimen name="clickable_height_padded">56dp</dimen>
+
+    <dimen name="std_txt">16sp</dimen>
+    <dimen name="md_txt">18sp</dimen>
+    <dimen name="lg_txt">22sp</dimen>
+
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="collpase_appbar_height_std">92dp</dimen>
+    <dimen name="thumbnail_size">192dp</dimen>
+
+</resources>
